@@ -1,0 +1,29 @@
+{
+ "name": "d3_analysis",
+ "children": [
+  {
+   "name": "2",
+   "children": [
+    {"name": "Mike", "size": 3},
+    {"name": "Amber", "size": 1},
+    {"name": "Steve", "size": 2}
+   ]
+  },
+  {
+   "name": "5",
+   "children": [
+    {"name": "Gularia", "size": 1},
+    {"name": "Henstia", "size": 2}
+
+   ]
+  },
+  {
+	"name":"13",
+	"children":[
+	 {"name": "Beru", "size": 7},
+	 {"name": "Luke", "size": 4},
+	 {"name": "Henry", "size": 6}
+	]
+  }
+ ]
+}

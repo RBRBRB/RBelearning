@@ -1,0 +1,46 @@
+.owlcards{
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  line-height: 180px;
+}
+.owlcrouse_item{
+  background-color: #ED4B64;
+  /*for my monitor*/
+  /*height: 210px;*/
+  /* for 1080p */
+  height: 210px;
+}
+.owlchapter_item{
+  background-color: #45B69C;
+  /*for my monitor*/
+  /*height: 210px;*/
+  /* for 1080p */
+  height: 210px;
+}
+.arrow{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  margin-left: 49%;
+
+}
+.arrow-bottom{
+  transform: rotate(135deg)
+}
+#crouse_pointer{
+  text-align: center;
+  font-size: 24px;
+}
+
+
+.jumbotron{
+  background: #E6E6E6 !important;
+  min-height: 700px;
+  touch-action: pan-y;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}

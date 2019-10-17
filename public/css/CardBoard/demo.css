@@ -1,0 +1,131 @@
+#demo{
+  margin-top: 50px;
+  touch-action: pan-x;
+}
+
+#overview{
+  touch-action: pan-y;
+}
+.owl-theme .owl-controls .owl-page {
+    display: inline-block;
+}
+.owl-theme .owl-controls .owl-page span {
+    background: none repeat scroll 0 0 #869791;
+    border-radius: 20px;
+    display: block;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px;
+}
+
+#overview , #overview_search{
+  position: absolute;
+  transform: translate(-50%);
+  top: 60px;
+  left: 50%;
+  width: 1500px;
+  height: 500px;
+  /*
+  background: linear-gradient(135deg, #2980b9 0%,#9b59b6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+  */
+}
+#filmStrip {
+  margin:0px auto !important;
+  border-radius: 50px;
+  background: #BBC1BB;
+  height: 100px;
+  width: 1000px;
+  touch-action: pan-y;
+  z-index: 997;
+}
+/*define the min-height of card in demo page*/
+.card{
+  min-height: 400px;
+}
+
+.front .flipmark_f{
+  width: 50px !important;
+  height: 50px;
+  float: right;
+}
+.back .flipmark_b{
+  width: 50px !important;
+  height: 50px;
+}
+
+/*Layout of overview div*/
+.grid {
+	column-gap: 0;
+	display: block;
+	padding: 5px;
+  list-style-type: none;
+}
+
+@media (min-width: 500px) {
+	.grid {
+		column-count: 2;
+	}
+}
+
+@media (min-width: 700px) {
+	.grid {
+		column-count: 4;
+	}
+}
+
+.item {
+	box-sizing: border-box;
+	padding: 5px;
+	break-inside: avoid;
+}
+
+.box {
+	background: #fff;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+	padding: 40px 25px;
+
+}
+
+/* minmax(auto, 57ch) */
+
+.card-group {
+  display: grid;
+/*   grid-template-columns: minmax(1.2rem, 1fr) minmax(1.2rem, 1fr)minmax(1.2rem, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(1.2rem, 1fr));
+  grid-gap: 20px;
+}
+
+#filmnav {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 0;
+}
+
+.item:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.05), 0 6px 18px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.05), 0 6px 18px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+/*This section desribes the notified tool at the top right of every page*/
+.tip-box{
+  position: relative;
+  width: 150px;
+  left: 90%;
+}
+.mark-star{
+  color: #F4D35E;
+}
+
+/* This section adjust some display setting in demo page*/
+img{
+  display: inline-block !important;
+}

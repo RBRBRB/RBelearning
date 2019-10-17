@@ -28,6 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
+
     protected $redirectTo = '/home';
 
     /**
@@ -37,6 +38,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
+        //$this->redirectTo = url()->previous();
         $this->middleware('guest');
     }
 

@@ -1,0 +1,204 @@
+
+
+ol {
+  list-style: none;
+  padding: 0;
+  min-width: 850px;
+  margin: 0 auto;
+  font-size: 27px !important;
+}
+
+ol ol {
+  margin: -30px -10px 10px -10px;
+  display: none;
+  padding: 40px 10px 10px 30px;
+  background: rgba(65, 81, 89, 0.05);
+  -webkit-transition: all 0.5s ease-in 2s;
+  transition: all 0.5s ease-in 2s;
+  border-radius: 5px 0 0 5px;
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 15px;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  margin-bottom: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  min-height: 10px;
+}
+
+.card.is-loading {
+  -webkit-animation: shine 1s infinite ease-in-out;
+          animation: shine 1s infinite ease-in-out;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+  background-repeat: repeat-y;
+  background-size: 40% 100%;
+  background-position: -40% 0%;
+}
+
+.card.is-active {
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.13), 0 3px 6px 0 rgba(0, 0, 0, 0.08) !important;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.13), 0 3px 6px 0 rgba(0, 0, 0, 0.08) !important;
+  -webkit-transform: translateY(-2px) !important;
+          transform: translateY(-2px) !important;
+  z-index: 1;
+  position: relative;
+}
+
+.card.is-active + ol {
+  display: block;
+}
+
+.card--group:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.05), 0 6px 18px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.05), 0 6px 18px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+.chapterCard:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.05), 0 6px 18px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.05), 0 6px 18px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  background: #77A9D8;
+  color: white;
+}
+
+@-webkit-keyframes shine {
+  to {
+    background-position: 140% 0;
+    /* move highlight to right */
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: 140% 0;
+    /* move highlight to right */
+  }
+}
+::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+}
+
+/*jumbotron in feedback page*/
+.jumbotron{
+  background: #E6E6E6 !important;
+  min-height: 400px;
+  touch-action: pan-y;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 25px;
+}
+#d3-block{
+  display: inline-flex;
+  color: #ddd;
+}
+
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+  margin-right: 15px;
+
+}
+select {
+  flex: 1;
+  padding-left: 8px !important;
+  color: #fff;
+  cursor: pointer;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
+
+
+
+/*This section describes D3 prapgh*/
+text {
+  font: 10px sans-serif;
+}
+
+rect.background {
+  fill: #DCD9C6;
+}
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+}
+
+svg{
+  margin-top: 10px;
+}
+#analysis_block{
+  display: grid;
+  grid-template-columns: 10px 60% 40% 10px;
+  grid-template-rows: 10px auto 10px;
+  justify-items: center;
+
+}
+#graph_block{
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+
+}
+#browse_content{
+  grid-column: 3/4;
+  grid-row: 2/3;
+  overflow: hidden;
+  background: #ECECEC;
+}
