@@ -44,8 +44,8 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_DATABASE: rbdb
-      MYSQL_ROOT_PASSWORD: qaz8877921
+      MYSQL_DATABASE: "user define"
+      MYSQL_ROOT_PASSWORD: "your password"
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
